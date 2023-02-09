@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <style>
+      .toolbar {
+        border: 1px red solid;
+        height: 64px;
+        -webkit-app-region: drag;
+      }
+    </style>
+    <script>
+      function clicked(v) {
+        console.log("v:", v);
+        document.getElementById("output").innerHTML = v;
+      }
+    </script>
+  </head>
+  <body>
+    <header class="toolbar">
+      toolbar
+      <button onclick="clicked('toolbar')">click me</button>
+    </header>
+    <div id="output"></div>
+    <main class="content">
+      content
+      <button onclick="clicked('content')">click me</button>
+    </main>
+  </body>
+</html>
