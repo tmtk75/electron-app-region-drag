@@ -15,3 +15,6 @@ $ yarn dev
 * (b) The "click me" next "toolbar" cannot be clicked.
 
 It's expected (b) can be clicked but doesn't work with electron v23.0.0.
+
+----
+Reported at https://github.com/electron/electron/issues/37210
